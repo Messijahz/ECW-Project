@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: #131022;
+  background-color: white;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 52px;
+  /* padding: 11px 16px; */
+}
+
+.mainlogo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.mainlogo h2 {
+  font-size: 20.8px;
+  color: #131022;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.toggle-switch {
+  width: 46px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease;
+}
+
+/* När knappen är aktiv */
+.toggle-switch.active {
+  background-color: #6366f1;
+}
+
+.toggle-switch.active .toggle-circle {
+  left: 24px; /* Justera så att kulan flyttas till höger */
+}
+
+.hamburger {
+  cursor: pointer;
+}
