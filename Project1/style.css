@@ -16,15 +16,16 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 390px;
+  border: solid #131022;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
   height: 52px;
-  /* padding: 11px 16px; */
+  padding: 11px 16px;
 }
 
 .mainlogo {
@@ -72,9 +73,78 @@ body {
 }
 
 .toggle-switch.active .toggle-circle {
-  left: 24px; /* Justera så att kulan flyttas till höger */
+  left: 24px;
 }
 
 .hamburger {
+  cursor: pointer;
+}
+
+#showcase {
+  background: radial-gradient(
+    118% 116.18% at 50% 100%,
+    rgba(99, 102, 241, 0.1) 0%,
+    rgba(218, 70, 239, 0.05) 41.83%,
+    rgba(241, 244, 253, 0.07) 82.52%
+  );
+}
+
+.showcase-text1 {
+  padding: 26px 45px 42px;
+}
+
+.showcase-text2 {
+  padding: 0px 10px 42px;
+}
+
+.showcase-text h1 {
+  font-size: 34.1px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 44.38px;
+}
+
+.showcase-text2 h2 {
+  color: #585c7b;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+
+.buttons {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-mobile {
+  background-color: #131022;
+  border-radius: 10px;
+  width: 365px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+.android-btn-mobile {
+  margin: 25px 11px 16px;
+}
+
+.apple-btn-mobile {
+  margin-inline: 11px;
+}
+
+.arrow-down-btn {
+  margin: 12px 11px 16px;
+  background-color: white;
+  border-radius: 1px solid;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
 }
