@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   text-align: center;
   width: 390px;
-  border: solid #131022;
+  /* border: solid #131022; */
 }
 
 #navbar {
@@ -150,7 +150,7 @@ body {
 }
 
 #features {
-  height: 1100px;
+  height: auto;
   text-align: center;
 
   h2 {
@@ -211,5 +211,68 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25.6px;
+  line-height: 24px;
+  max-width: 300px;
+}
+
+#information {
+  background-color: #f3f6ff;
+
+  h2 {
+    color: #131022;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 36px;
+    margin-block: 64px 32px;
+  }
+
+  h3 {
+    color: #131022;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+
+  img {
+    padding-bottom: 32px;
+  }
+
+  p {
+    color: #585c7b;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 57px;
+  }
+}
+
+#faq {
+  h2 {
+    color: #131022;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+    margin-block: 44px 20px;
+    padding-inline: 16px;
+  }
+
+  p {
+    color: #585c7b;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 55px;
+    padding-inline: 20px;
+  }
 }
