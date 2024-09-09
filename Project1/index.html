@@ -6,13 +6,15 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Document</title>
   </head>
+
   <body>
     <main id="wrapper">
       <nav id="navbar">
+        <a href="#">
         <div class="mainlogo">
           <img src="pictures/mainlogo.svg" alt="Picture of Silicon logotype" />
           <h2>Silicon</h2>
-        </div>
+        </div></a>
         <div class="navigation">
           <div class="toggle-switch">
             <div class="toggle-circle"></div>
@@ -27,11 +29,11 @@
       </nav>
 
       <section id="showcase">
-        <div class="showcase-text1">
+        <div class="showcase-text">
           <h1>Manage All Your Money in One App</h1>
         </div>
 
-        <div class="showcase-text2">
+        <div class="showcase-text">
           <h2>
             We offer you a new generation of the mobile banking. Save, spend &
             manage money in your pocket.
@@ -44,9 +46,15 @@
           <button class="btn-mobile android-btn-mobile">
             <img src="pictures/googleplay-light.svg" alt="" />
           </button>
-          <button class="arrow-down-btn">
-            <img src="pictures/arrow-down.svg" alt="Clickable arrow down" />
-          </button>
+          <div class="buttons-container">
+            <button class="arrow-down-btn">
+              <img
+                src="pictures/arrow-down.svg"
+                alt="Clickable arrow down button"
+              />
+            </button>
+            <h3 class="discover-mobile">Discover more</h3>
+          </div>
         </div>
       </section>
       <section id="features">
@@ -58,81 +66,83 @@
             volutpat ligula est. Mattis fermentum, at nec lacus.
           </p>
         </div>
-        <div class="features-card-wrapper">
-          <div class="features-card-logos">
-            <img src="pictures/payments.svg" alt="Bank card" />
+        <div class="features-card-container">
+          <div class="features-card">
+            <div class="features-card-logos">
+              <img src="pictures/payments.svg" alt="Bank card" />
+            </div>
+            <div class="features-text">
+              <h3>Easy Payments</h3>
+              <p class="cards-text">
+                Id mollis consectetur congue egestas egestas suspendisse blandit
+                justo.
+              </p>
+            </div>
           </div>
-          <div class="features-text">
-            <h3>Easy Payments</h3>
-            <p class="cards-text">
-              Id mollis consectetur congue egestas egestas suspendisse blandit
-              justo.
-            </p>
-          </div>
-        </div>
 
-        <div class="features-card-wrapper">
-          <div class="features-card-logos">
-            <img src="pictures/security.svg" alt="Bank card" />
+          <div class="features-card">
+            <div class="features-card-logos">
+              <img src="pictures/security.svg" alt="Bank card" />
+            </div>
+            <div class="features-text">
+              <h3>Data Security</h3>
+              <p class="cards-text">
+                Augue pulvinar justo, fermentum fames aliquam accumsan
+                vestibulum non.
+              </p>
+            </div>
           </div>
-          <div class="features-text">
-            <h3>Data Security</h3>
-            <p class="cards-text">
-              Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum
-              non.
-            </p>
-          </div>
-        </div>
 
-        <div class="features-card-wrapper">
-          <div class="features-card-logos">
-            <img src="pictures/statistics.svg" alt="Bank card" />
+          <div class="features-card">
+            <div class="features-card-logos">
+              <img src="pictures/statistics.svg" alt="Bank card" />
+            </div>
+            <div class="features-text">
+              <h3>Cost Statistics</h3>
+              <p class="cards-text">
+                Mattis urna ultricies non amet, purus in auctor non. Odio
+                vulputate ac nibh.
+              </p>
+            </div>
           </div>
-          <div class="features-text">
-            <h3>Cost Statistics</h3>
-            <p class="cards-text">
-              Mattis urna ultricies non amet, purus in auctor non. Odio
-              vulputate ac nibh.
-            </p>
-          </div>
-        </div>
 
-        <div class="features-card-wrapper">
-          <div class="features-card-logos">
-            <img src="pictures/support.svg" alt="Bank card" />
+          <div class="features-card">
+            <div class="features-card-logos">
+              <img src="pictures/support.svg" alt="Bank card" />
+            </div>
+            <div class="features-text">
+              <h3>Support 24/7</h3>
+              <p class="cards-text">
+                A elementum, imperdiet enim, pretium etiam facilisi in aenean
+                quam mauris.
+              </p>
+            </div>
           </div>
-          <div class="features-text">
-            <h3>Support 24/7</h3>
-            <p class="cards-text">
-              A elementum, imperdiet enim, pretium etiam facilisi in aenean quam
-              mauris.
-            </p>
-          </div>
-        </div>
 
-        <div class="features-card-wrapper">
-          <div class="features-card-logos">
-            <img src="pictures/cashback.svg" alt="Bank card" />
+          <div class="features-card">
+            <div class="features-card-logos">
+              <img src="pictures/cashback.svg" alt="Bank card" />
+            </div>
+            <div class="features-text">
+              <h3>Regular Cashback</h3>
+              <p class="cards-text">
+                Sit facilisis dolor arcu, fermentum vestibulum arcu elementum
+                imperdiet eleifend.
+              </p>
+            </div>
           </div>
-          <div class="features-text">
-            <h3>Regular Cashback</h3>
-            <p class="cards-text">
-              Sit facilisis dolor arcu, fermentum vestibulum arcu elementum
-              imperdiet eleifend.
-            </p>
-          </div>
-        </div>
 
-        <div class="features-card-wrapper">
-          <div class="features-card-logos">
-            <img src="pictures/happy.svg" alt="Bank card" />
-          </div>
-          <div class="features-text">
-            <h3>Top Standards</h3>
-            <p class="cards-text">
-              Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id.
-              Sit facilisis dolor arcu.
-            </p>
+          <div class="features-card">
+            <div class="features-card-logos">
+              <img src="pictures/happy.svg" alt="Bank card" />
+            </div>
+            <div class="features-text">
+              <h3>Top Standards</h3>
+              <p class="cards-text">
+                Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id.
+                Sit facilisis dolor arcu.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -147,13 +157,139 @@
         </p>
       </section>
       <section id="faq">
+        <div class="faq-heading-wrapper">
         <h2>Any questions? Check out the FAQs</h2>
-        <p>Still have unanswered questions and need to get in touch?</p>
+        <h3>Still have unanswered questions and need to get in touch?</h3>
+      </div>
+        <div class="information-box-container">
+          <div class="information-box">
+            <h4>Is any of my personal information stored in the App?</h4>
+
+            <div class="buttons-container-faq">
+              <button class="arrow-down-btn-blue">
+                <img src="pictures/arrow-up-info.svg" alt="Arrow down button" />
+              </button>
+            </div>
+          </div>
+          <div class="information-box">
+            <p class="open-box-info">
+              Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper.
+              Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus
+              adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
+              fermentum duis accumsan lectus non. Massa cursus molestie lorem
+              scelerisque pellentesque. Nisi, enim, arcu purus gravida
+              adipiscing euismod montes, duis egestas. Vehicula eu etiam quam
+              tristique tincidunt suspendisse ut consequat. Ornare senectus
+              fusce dignissim ut. Integer consequat in eu tortor, faucibus et
+              lacinia posuere. Turpis sit viverra lorem suspendisse lacus
+              aliquam auctor vulputate. Quis egestas aliquam nunc purus lacus,
+              elit leo elit facilisi. Dignissim amet adipiscing massa integer.
+            </p>
+          </div>
+          <div class="information-box">
+            <h4>What formats can I download my transaction history in?</h4>
+            <div class="buttons-container-faq">
+            <button class="arrow-down-btn-grey">
+              <img src="pictures/arrow-down-info.svg" alt="Arrow down button" />
+            </button>
+          </div>
+          </div>
+          
+          <div class="information-box">
+            <h4>Can I schedule future transfers?</h4>
+            <div class="buttons-container-faq">
+              <button class="arrow-down-btn-grey">
+                <img
+                  src="pictures/arrow-down-info.svg"
+                  alt="Arrow down button"
+                />
+              </button>
+            </div>
+            </div>
+            <div class="information-box">
+              <h4>When can I use Banking App services?</h4>
+              <div class="buttons-container-faq">
+                <button class="arrow-down-btn-grey">
+                  <img
+                    src="pictures/arrow-down-info.svg"
+                    alt="Arrow down button"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="information-box">
+              <h4>
+                Can I create my own password that is easy for me to remember?
+              </h4>
+              <div class="buttons-container-faq">
+                <button class="arrow-down-btn-grey">
+                  <img
+                    src="pictures/arrow-down-info.svg"
+                    alt="Arrow down button"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="information-box">
+              <h4>What happens if I forget or lose my password?</h4>
+              <div class="buttons-container-faq">
+                <button class="arrow-down-btn-grey">
+                  <img
+                    src="pictures/arrow-down-info.svg"
+                    alt="Arrow down button"
+                  />
+                </button>
+              </div>
+            </div>
+
+            
+          </div>
+
+          
+        </div>
+          <div class="contact-container">
+              <a href="#">
+                <button class="contact-btn">Contact us now</button>
+              </a>
+            </div>
+
+
+            <div class="newsletter-card">
+            <div class="newsletter-container">
+              <div class="subscribe-info">
+              <img src="pictures/notification-icon-1.svg" alt="notifications bell">
+               <h3 class="subscribe">Subscribe to our
+                newsletter</h3>
+              </div>
+
+              <div class="subscribe-form">
+              <form class="contact-form">
+                
+                <label class="contact-form" for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+              
+                <button class="contact-btn-subscribe" type="submit">Subscribe</button>
+              </form>
+            
+
+            </div>
+              
+          </div>
+              
+
+            
+          </div>
+
+          
+
+
+          
       </section>
 
       <section id="contact"></section>
 
-      <footer></footer>
+      <footer><p>© 2024 Silicon. All rights reserved. 
+        Credit MadrasThemes</p></footer>
     </main>
   </body>
 </html>
