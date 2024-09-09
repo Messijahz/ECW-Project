@@ -30,7 +30,7 @@
   --color-button-primary: border-radius: 8px;
   background: var(--Brand-Primary, #6366f1);
   --color-button-secondary: border-radius: 8px;
-  background: var(--Gray-200, #EFF2FC);
+  background: var(--Gray-200, #EFF2cdFC);
 
   --container-padding: 1rem;
   --transition-time: all 0.2s;
@@ -62,36 +62,38 @@ h4,
 h5,
 h6 {
   color: var(--color-gray900);
+  font-weight: 800;
+  font-style: normal;
 }
 
 h1 {
-  font-weight: 900;
   font-size: 40px;
+  line-height: 130%;
 }
 
 h2 {
-  font-weight: 900;
   font-size: 32px;
+  line-height: 130%;
 }
 
 h3 {
-  font-weight: 900;
   font-size: 28px;
+  line-height: 130%;
 }
 
 h4 {
-  font-weight: 900;
   font-size: 24px;
+  line-height: 140%;
 }
 
 h5 {
-  font-weight: 900;
   font-size: 20px;
+  line-height: 140%;
 }
 
 h6 {
-  font-weight: 900;
   font-size: 16px;
+  line-height: 140%;
 }
 
 a {
