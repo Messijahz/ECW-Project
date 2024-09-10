@@ -49,7 +49,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  color: #131022;
+  color: var(--color-gray900);
   background-color: white;
   /* padding-left: var(--container-padding);
   padding-right: var(--container-padding); */
@@ -163,7 +163,6 @@ a:hover {
   transition: left 0.2s ease;
 }
 
-/* När knappen är aktiv */
 .toggle-switch.active {
   background-color: #6366f1;
 }
@@ -190,8 +189,6 @@ a:hover {
 
   h1 {
     font-size: 34px;
-    font-style: normal;
-    font-weight: 800;
     line-height: 44px;
     margin-block: 26px;
     padding-inline: 45px;
@@ -201,14 +198,12 @@ a:hover {
     color: #585c7b;
     text-align: center;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 28.8px;
     margin-bottom: 42px;
     padding-inline: 10px;
   }
 
-  .showcase-text2 {}
 }
 
 .buttons {
@@ -226,7 +221,7 @@ a:hover {
 }
 
 .android-btn-mobile {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .apple-btn-mobile {
@@ -300,8 +295,6 @@ a:hover {
   h2 {
     color: #131022;
     font-size: 28px;
-    font-style: normal;
-    font-weight: 800;
     line-height: 36.21px;
     margin-block: 36px 23px;
   }
@@ -309,8 +302,6 @@ a:hover {
   h3 {
     color: #131022;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
     line-height: 28px;
     margin-bottom: 12px;
     text-align: left;
@@ -319,7 +310,6 @@ a:hover {
   p {
     color: #585c7b;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 28.8px;
     margin: 0px;
@@ -352,8 +342,6 @@ a:hover {
   justify-content: center;
 }
 
-.features-text {}
-
 .cards-text {
   text-align: left;
   color: #585c7b;
@@ -371,8 +359,6 @@ a:hover {
     color: #131022;
     text-align: center;
     font-size: 28px;
-    font-style: normal;
-    font-weight: 800;
     line-height: 36px;
     margin-top: 60px;
     margin-bottom: 30px;
@@ -382,8 +368,6 @@ a:hover {
     color: #131022;
     text-align: center;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 800;
     line-height: 30px;
     margin-bottom: 12px;
     padding-inline: 60px;
@@ -397,8 +381,6 @@ a:hover {
     color: #585c7b;
     text-align: center;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 25px;
     margin-bottom: 57px;
     padding-inline: 15px;
@@ -413,8 +395,6 @@ a:hover {
     color: #131022;
     text-align: center;
     font-size: 25px;
-    font-style: normal;
-    font-weight: 800;
     line-height: 32px;
   }
 
@@ -422,7 +402,6 @@ a:hover {
     color: #585C7B;
     text-align: center;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 28.8px;
     padding-block: 1.5rem 2rem;
@@ -435,12 +414,12 @@ a:hover {
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
-    padding-block: 1.5rem;
+    padding-bottom: 1rem;
   }
 }
 
 .faq-heading-wrapper {
-  padding-block: 3rem 1.2rem;
+  padding-block: 2rem 1.2rem;
   padding-inline: 2rem;
 }
 
@@ -468,7 +447,6 @@ a:hover {
   h4 {
     color: #131022;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 20.8px;
     text-align: left;
@@ -478,7 +456,6 @@ a:hover {
   p {
     color: #585C7B;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 22.4px;
   }
@@ -499,6 +476,8 @@ a:hover {
   border-bottom-right-radius: 10px;
   border-bottom: none;
 }
+
+#contact {}
 
 .contact-container {
   display: flex;
@@ -537,43 +516,46 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-inline: 1rem;
 }
 
 .newsletter-container {
   display: flex;
   align-items: center;
+  justify-items: center;
   flex-direction: column;
   background-color: #F3F6FF;
-  width: 370px;
-  height: 250px;
+  width: auto;
+  height: auto;
   border-radius: 10px;
 
   img {
-    margin-inline: 1rem;
-    height: 78px;
+    height: auto;
     width: 78px;
   }
 
-  .subscribe {
-    color: #131022;
+  h3 {
     font-size: 21.6px;
-    font-style: normal;
     font-weight: 800;
     line-height: 30.2px;
     padding-right: 1.5rem;
+    text-align: left;
   }
 }
 
 .subscribe-info {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding-block: 2rem;
-  align-self: flex-start;
+  padding-inline: 1rem;
+  gap: 1rem;
 
 }
 
 .subscribe-form {
   display: flex;
+  padding-bottom: 2rem;
 }
 
 .contact-form {
@@ -589,9 +571,17 @@ a:hover {
   height: 50px;
   border: 1px solid #D4D7E5;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   border-right: none;
   border-radius: 10px 0 0 10px;
+
+  &:focus {
+    outline: 1px solid var(--color-primary);
+  }
+
+  /* &:invalid {
+    outline: 1px solid var(--color-system-error);
+  } */
 }
 
 .contact-btn-subscribe {
@@ -611,7 +601,7 @@ a:hover {
 
 footer {
   p {
-    color: #9397AD;
+    color: var(--color-gray600);
     padding: 1.5rem 3rem;
   }
 }
