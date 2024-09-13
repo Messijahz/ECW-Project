@@ -53,8 +53,6 @@ body {
   font-size: 16px;
   color: var(--color-gray900);
   background-color: var(--color-white);
-  /* padding-left: var(--container-padding);
-  padding-right: var(--container-padding); */
 }
 
 h1,
@@ -103,7 +101,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--color-primary);
 }
 
@@ -186,44 +184,113 @@ a:hover {
   cursor: pointer;
 }
 
-#showcase {
+#hero {
   background: radial-gradient(118% 116.18% at 50% 100%,
       rgba(99, 102, 241, 0.1) 0%,
       rgba(218, 70, 239, 0.05) 41.83%,
       rgba(241, 244, 253, 0.07) 82.52%);
-  display: flex;
-  flex-direction: column;
+
 }
 
-.showcase-text {
-  font-size: 34px;
+.hero-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "headline headline"
+      "content images";
+  }
+}
+
+.hero-headline {
+  grid-area: headline;
 
   h1 {
     font-size: 34px;
     line-height: 44px;
     margin-block: 26px;
     padding-inline: 45px;
+
+    @media (min-width: 768px) {
+      font-size: 56px;
+    }
   }
 
-  h2 {
+
+}
+
+.hero-content {
+  grid-area: content;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  p {
     color: var(--color-gray700);
-    text-align: center;
     font-size: 18px;
     font-weight: 400;
-    line-height: 28.8px;
-    margin-bottom: 42px;
-    padding-inline: 10px;
+    line-height: 22px;
+    margin-bottom: 2.5rem;
+    padding-inline: 0.5rem;
+  }
+}
+
+.discover-more {
+  color: var(--color-gray900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
   }
 
 }
 
-.showcase-tablet {
+.hero-images {
+  grid-area: images;
   display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  .image-back {}
+
+  .image-front {}
 }
 
-.buttons {
+.btn-download-app {
+  background-color: var(--color-gray900);
+  color: var(--color-white);
+  border-radius: 8px;
+  padding: 12px 25px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+
+.btn-download-app:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .btn-mobile {
@@ -236,33 +303,29 @@ a:hover {
 }
 
 .android-btn-mobile {
-  margin-top: 1rem;
-  margin-inline: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .apple-btn-mobile {
-  margin-inline: 0.8rem;
-}
-
-.buttons-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin-block: 2rem;
+  align-items: center;
 }
 
-.arrow-down-btn {
-  background-color: var(--color-white);
-  border-radius: 1px solid;
-  border: none;
-  overflow: hidden;
-  border-radius: 50%;
-  width: 44px;
+.btn-circle {
   height: 44px;
-  cursor: pointer;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: var(--color-gray900);
 }
+
+
 
 .arrow-down-btn-grey {
   background-color: var(--color-gray100);
@@ -293,6 +356,10 @@ a:hover {
   color: var(--color-gray700);
   font-style: normal;
   font-weight: 400;
+}
+
+.mobile-img-showcase {
+  display: none;
 }
 
 #features {
@@ -329,13 +396,6 @@ a:hover {
   display: grid;
   justify-content: center;
 }
-
-/* .features-card-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-} */
 
 .features-card {
   display: flex;
@@ -619,7 +679,7 @@ footer {
 }
 
 
-/* Diffrent sizes for screens */
+
 
 
 @media (min-width: 768px) {
@@ -644,33 +704,6 @@ footer {
     padding-inline: 2rem;
     gap: 1rem;
   }
-
-  .showcase-text {
-    font-size: 34px;
-
-    h1 {
-      text-align: center;
-      font-size: 44px;
-      line-height: 58px;
-      margin-block: 26px;
-      padding-inline: 185px;
-    }
-
-    h2 {
-      color: var(--color-gray700);
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 28.8px;
-    }
-
-  }
-
-  .showcase-tablet {
-    display: flex;
-  }
-
 }
-
 
 @media (min-width: 1024px) {}

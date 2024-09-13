@@ -4,26 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-    <title>Document</title>
+    <title>Silicon</title>
   </head>
 
   <body>
     <main id="wrapper">
       <nav id="navbar">
         <a href="#">
-        <div class="mainlogo">
-          <img src="pictures/mainlogo.svg" alt="Picture of Silicon logotype" />
-          <h2>Silicon</h2>
-        </div></a>
+          <div class="mainlogo">
+            <img
+              src="pictures/mainlogo.svg"
+              alt="Picture of Silicon logotype"
+            />
+            <h2>Silicon</h2>
+          </div></a
+        >
         <div class="navigation">
           <div class="navigation-tablet">
-          <p class="darkmode">Dark Mode</p>
-          <div class="toggle-switch">
-            <div class="toggle-circle"></div>
+            <p class="darkmode">Dark Mode</p>
+            <div class="toggle-switch">
+              <div class="toggle-circle"></div>
+            </div>
           </div>
-        </div>
           <img
             class="hamburger"
             src="pictures/hamburger.svg"
@@ -33,38 +40,55 @@
         <script src="toggle.js"></script>
       </nav>
 
-      <section id="showcase">
-        <div class="showcase-text">
-          <h1>Manage All Your Money in One App</h1>
-        </div>
+      <section id="hero">
+        <div class="hero-container">
+          <div class="hero-headline">
+            <h1>Manage All Your Money in One App</h1>
+          </div>
 
+          <div class="hero-content">
+            <p>
+              We offer you a new generation of the mobile banking. Save, spend &
+              manage money in your pocket.
+            </p>
 
-        <div class="showcase-tablet">
-        <div class="showcase-text">
-          <h2>
-            We offer you a new generation of the mobile banking. Save, spend &
-            manage money in your pocket.
-          </h2>
-        </div>
-        <div class="buttons">
-          <button class="btn-mobile apple-btn-mobile">
-            <img src="pictures/appstore-light.svg" alt="" />
-          </button>
-          <button class="btn-mobile android-btn-mobile">
-            <img src="pictures/googleplay-light.svg" alt="" />
-          </button>
-          <div class="buttons-container">
-            <button class="arrow-down-btn">
-              <img
-                src="pictures/arrow-down-info.svg"
-                alt="Clickable arrow down button"
-              />
-            </button>
-            <h3 class="discover-mobile">Discover more</h3>
+            <div class="hero-buttons">
+              <a class="btn-mobile apple-btn-mobile" href="#">
+                <img
+                  src="pictures/appstore-light.svg"
+                  alt="Download at Apple appstore"
+                />
+              </a>
+              <a class="btn-mobile android-btn-mobile" href="#">
+                <img
+                  src="pictures/googleplay-light.svg"
+                  alt="Download at Google Play"
+                />
+              </a>
+            </div>
+            <a class="discover-more" href="#">
+              <span class="btn-circle">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <span>Discover more</span>
+            </a>
+          </div>
+
+          <div class="hero-images">
+            <img
+              src="pictures/mobile-back.svg"
+              alt="two mobiles"
+              class="image-back"
+            />
+            <img
+              src="pictures/mobile-front.svg"
+              alt="two mobiles"
+              class="image-front"
+            />
           </div>
         </div>
-      </div>
       </section>
+
       <section id="features">
         <div class="app-features">
           <h2>App Features</h2>
@@ -166,9 +190,9 @@
       </section>
       <section id="faq">
         <div class="faq-heading-wrapper">
-        <h2>Any questions? Check out the FAQs</h2>
-        <h3>Still have unanswered questions and need to get in touch?</h3>
-      </div>
+          <h2>Any questions? Check out the FAQs</h2>
+          <h3>Still have unanswered questions and need to get in touch?</h3>
+        </div>
         <div class="information-box-container">
           <div class="information-box">
             <h4>Is any of my personal information stored in the App?</h4>
@@ -197,12 +221,15 @@
           <div class="information-box">
             <h4>What formats can I download my transaction history in?</h4>
             <div class="buttons-container-faq">
-            <button class="arrow-down-btn-grey">
-              <img src="pictures/arrow-down-info.svg" alt="Arrow down button" />
-            </button>
+              <button class="arrow-down-btn-grey">
+                <img
+                  src="pictures/arrow-down-info.svg"
+                  alt="Arrow down button"
+                />
+              </button>
+            </div>
           </div>
-          </div>
-          
+
           <div class="information-box">
             <h4>Can I schedule future transfers?</h4>
             <div class="buttons-container-faq">
@@ -213,93 +240,88 @@
                 />
               </button>
             </div>
-            </div>
-            <div class="information-box">
-              <h4>When can I use Banking App services?</h4>
-              <div class="buttons-container-faq">
-                <button class="arrow-down-btn-grey">
-                  <img
-                    src="pictures/arrow-down-info.svg"
-                    alt="Arrow down button"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="information-box">
-              <h4>
-                Can I create my own password that is easy for me to remember?
-              </h4>
-              <div class="buttons-container-faq">
-                <button class="arrow-down-btn-grey">
-                  <img
-                    src="pictures/arrow-down-info.svg"
-                    alt="Arrow down button"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="information-box">
-              <h4>What happens if I forget or lose my password?</h4>
-              <div class="buttons-container-faq">
-                <button class="arrow-down-btn-grey">
-                  <img
-                    src="pictures/arrow-down-info.svg"
-                    alt="Arrow down button"
-                  />
-                </button>
-              </div>
+          </div>
+          <div class="information-box">
+            <h4>When can I use Banking App services?</h4>
+            <div class="buttons-container-faq">
+              <button class="arrow-down-btn-grey">
+                <img
+                  src="pictures/arrow-down-info.svg"
+                  alt="Arrow down button"
+                />
+              </button>
             </div>
           </div>
-        
-        </section>
-
-        <section class="contact">
-          <div class="contact-container">
-              <a href="#">
-                <button class="contact-btn">Contact us now</button>
-              </a>
+          <div class="information-box">
+            <h4>
+              Can I create my own password that is easy for me to remember?
+            </h4>
+            <div class="buttons-container-faq">
+              <button class="arrow-down-btn-grey">
+                <img
+                  src="pictures/arrow-down-info.svg"
+                  alt="Arrow down button"
+                />
+              </button>
             </div>
-
-
-            <div class="newsletter-card">
-            <div class="newsletter-container">
-              <div class="subscribe-info">
-              <img src="pictures/notification-icon-1.svg" alt="notifications bell">
-               <h3 id="contact">Subscribe to our
-                newsletter</h3>
-              </div>
-
-              <div class="subscribe-form">
-                <form action="" method="get" class="contact-form">
-                
-                 <label class="contact-form" for="email"></label>
-                 <div class="mail-icon-input">
-                  
-
-                 <input class="form-input" type="email" id="email" name="email" placeholder="&#xf003;   Your email" style="font-family:Arial, FontAwesome" required>
-                </div>
-                 <button class="contact-btn-subscribe" type="submit">Subscribe</button>
-                </form>
-               </div>
-
+          </div>
+          <div class="information-box">
+            <h4>What happens if I forget or lose my password?</h4>
+            <div class="buttons-container-faq">
+              <button class="arrow-down-btn-grey">
+                <img
+                  src="pictures/arrow-down-info.svg"
+                  alt="Arrow down button"
+                />
+              </button>
             </div>
-              
           </div>
-        </section>
-
-            
-          </div>
-
-          
-
-
-          
+        </div>
       </section>
 
-      <section id="contact"></section>
+      <section class="contact">
+        <div class="contact-container">
+          <a href="#">
+            <button class="contact-btn">Contact us now</button>
+          </a>
+        </div>
 
-      <footer><p>© 2024 Silicon. All rights reserved. 
-        Credit MadrasThemes</p></footer>
+        <div class="newsletter-card">
+          <div class="newsletter-container">
+            <div class="subscribe-info">
+              <img
+                src="pictures/notification-icon-1.svg"
+                alt="notifications bell"
+              />
+              <h3 id="contact">Subscribe to our newsletter</h3>
+            </div>
+
+            <div class="subscribe-form">
+              <form action="" method="get" class="contact-form">
+                <label class="contact-form" for="email"></label>
+                <div class="mail-icon-input">
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="&#xf003;   Your email"
+                    style="font-family: Arial, FontAwesome"
+                    required
+                  />
+                </div>
+                <button class="contact-btn-subscribe" type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2024 Silicon. All rights reserved. Credit MadrasThemes</p>
+      </footer>
     </main>
   </body>
 </html>
