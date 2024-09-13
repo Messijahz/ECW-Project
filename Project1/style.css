@@ -190,18 +190,29 @@ a:hover {
       rgba(218, 70, 239, 0.05) 41.83%,
       rgba(241, 244, 253, 0.07) 82.52%);
 
+
+
 }
 
 .hero-container {
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr;
+  grid-template-areas: "headline"
+    "content";
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "headline headline"
       "content images";
   }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "headline headline"
+      "content images";
+  }
+
 }
 
 .hero-headline {
@@ -214,7 +225,7 @@ a:hover {
     padding-inline: 45px;
 
     @media (min-width: 768px) {
-      font-size: 56px;
+      font-size: 44px;
     }
   }
 
@@ -223,18 +234,42 @@ a:hover {
 
 .hero-content {
   grid-area: content;
-
-  @media (min-width: 768px) {
-    text-align: left;
-  }
+  align-self: end;
 
   p {
     color: var(--color-gray700);
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
-    margin-bottom: 2.5rem;
-    padding-inline: 0.5rem;
+    padding-bottom: 2.5rem;
+    padding-inline: 2rem;
+    width: 350px;
+    margin: 0 auto
+  }
+
+  @media (min-width: 768px) {
+    text-align: left;
+
+    p {
+      margin: 0rem;
+      padding-inline: 2.2rem;
+      padding-block: 2rem;
+    }
+  }
+
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 2rem;
+
   }
 }
 
@@ -244,25 +279,44 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-block: 2rem;
+  margin-block: 1rem;
 
   @media (min-width: 768px) {
     justify-content: flex-start;
+    margin-left: 2rem;
+    padding-block: 1.5rem;
   }
 
 }
 
 .hero-images {
+  position: relative;
   grid-area: images;
   display: none;
+
+
 
   @media (min-width: 768px) {
     display: block;
   }
 
-  .image-back {}
+  .image-back {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 110px;
+    width: 80%;
+    height: 80%;
+  }
 
-  .image-front {}
+  .image-front {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: -35px;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .btn-download-app {
@@ -274,6 +328,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+
 }
 
 .btn-download-app:hover {
@@ -282,16 +337,7 @@ a:hover {
   text-decoration: none;
 }
 
-.hero-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
 
-  @media (min-width: 768px) {
-    flex-direction: column;
-  }
-}
 
 .btn-mobile {
   background-color: var(--color-gray900);
@@ -300,6 +346,16 @@ a:hover {
   height: 50px;
   cursor: pointer;
   border: none;
+
+  @media (min-width: 768px) {
+    background-color: var(--color-gray900);
+    border-radius: 10px;
+    width: 145px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+  }
+
 }
 
 .android-btn-mobile {
