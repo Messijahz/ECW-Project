@@ -53,6 +53,10 @@ body {
   font-size: 16px;
   color: var(--color-gray900);
   background-color: var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 h1,
@@ -105,12 +109,11 @@ a:hover {
   color: var(--color-primary);
 }
 
-#wrapper {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: auto;
-  margin: auto;
+.background-gradient {
+  background: radial-gradient(118% 116.18% at 50% 100%,
+      rgba(99, 102, 241, 0.1) 0%,
+      rgba(218, 70, 239, 0.05) 41.83%,
+      rgba(241, 244, 253, 0.07) 82.52%);
 }
 
 #navbar {
@@ -121,6 +124,20 @@ a:hover {
   margin-block: 1rem;
   padding-inline: 1rem;
   gap: 1rem;
+
+}
+
+@media (min-width: 768px) {
+
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-block: 2rem;
+    padding-inline: 2rem;
+    gap: 1rem;
+  }
 }
 
 .mainlogo {
@@ -141,6 +158,15 @@ a:hover {
   gap: 1rem;
 }
 
+@media (min-width: 768px) {
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
 .navigation-tablet {
   display: flex;
   gap: 1rem;
@@ -148,6 +174,14 @@ a:hover {
 
 .darkmode {
   display: none;
+}
+
+@media (min-width: 768px) {
+
+  .darkmode {
+    display: block;
+    font-weight: 600;
+  }
 }
 
 .toggle-switch {
@@ -184,15 +218,7 @@ a:hover {
   cursor: pointer;
 }
 
-#hero {
-  background: radial-gradient(118% 116.18% at 50% 100%,
-      rgba(99, 102, 241, 0.1) 0%,
-      rgba(218, 70, 239, 0.05) 41.83%,
-      rgba(241, 244, 253, 0.07) 82.52%);
-
-
-
-}
+#hero {}
 
 .hero-container {
   display: grid;
@@ -207,11 +233,14 @@ a:hover {
       "content images";
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1296px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "headline headline"
+    grid-template-areas: "headline images"
       "content images";
+    margin-top: 3rem;
   }
+
+
 
 }
 
@@ -230,8 +259,15 @@ a:hover {
       line-height: 58px;
       padding-inline: 10rem;
     }
-  }
 
+    @media (min-width: 1296px) {
+      font-size: 56px;
+      line-height: 130%;
+      text-align: left;
+      padding-inline: 2rem;
+    }
+
+  }
 
 }
 
@@ -298,8 +334,6 @@ a:hover {
   display: none;
   overflow: hidden;
 
-
-
   @media (min-width: 768px) {
     display: block;
   }
@@ -321,6 +355,27 @@ a:hover {
     width: 100%;
     height: 100%;
   }
+
+  @media (min-width: 1296px) {
+    .image-back {
+      position: absolute;
+      z-index: 5;
+      bottom: 0;
+      right: 110px;
+      width: 75%;
+      height: 75%;
+    }
+
+    .image-front {
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      right: -65px;
+      width: 90%;
+      height: 90%;
+    }
+  }
+
 }
 
 .btn-download-app {
@@ -456,6 +511,11 @@ a:hover {
     padding-block: 2.5rem 1.5rem;
     gap: 1.5rem;
   }
+
+  @media (min-width: 1296px) {
+    gap: 1rem;
+    padding-block: 4rem 1.5rem;
+  }
 }
 
 .logotype-box {
@@ -464,8 +524,23 @@ a:hover {
   @media (min-width: 768px) {
     display: block;
     border: 1.5px solid var(--color-gray400);
-    padding: 2rem 0.5rem;
+    padding: 1.5rem 0.5rem;
     border-radius: 10px;
+  }
+
+  @media (min-width: 1296px) {
+    padding: 1.5rem 0.5rem;
+  }
+
+
+
+}
+
+.logotype-box-desk {
+  display: none;
+
+  @media (min-width: 1296px) {
+    display: block;
   }
 }
 
@@ -754,33 +829,3 @@ footer {
     padding: 1.5rem 3rem;
   }
 }
-
-
-
-
-
-@media (min-width: 768px) {
-
-  .darkmode {
-    display: block;
-    font-weight: 600;
-  }
-
-  .navigation {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-  }
-
-  #navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    margin-block: 2rem;
-    padding-inline: 2rem;
-    gap: 1rem;
-  }
-}
-
-@media (min-width: 1024px) {}
