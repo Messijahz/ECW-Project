@@ -116,6 +116,32 @@ a:hover {
       rgba(241, 244, 253, 0.07) 82.52%);
 }
 
+.container {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+}
+
+@media (min-width: 1296px) {
+
+  .container {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    max-width: 1296px;
+  }
+}
+
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -127,18 +153,22 @@ a:hover {
 
 }
 
-.main-menu {
+.features-menu {
   display: none;
 
 }
 
 @media (min-width: 1296px) {
+  .features-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 1296px) {
   .main-menu {
     display: block;
-    text-align: left;
-    justify-content: left;
-    align-items: left;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -159,7 +189,7 @@ a:hover {
 
   .navbar {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     height: auto;
     margin-block: 2rem;
@@ -191,7 +221,7 @@ a:hover {
 
   .navigation {
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 4rem;
   }
 }
@@ -200,15 +230,8 @@ a:hover {
   .navigation {
     gap: 2rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-  }
-
-  @media (min-width: 1296px) {
-    .navigation {
-      gap: 2rem;
-      align-items: center;
-      justify-content: end;
-    }
   }
 }
 
@@ -402,20 +425,28 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-block: 1rem;
+  margin-block: 2rem;
 
   @media (min-width: 768px) {
     justify-content: flex-start;
     margin-left: 2rem;
-    padding-block: 1.5rem;
+    margin-block: 3rem;
   }
 
   @media (min-width: 1296px) {
     justify-content: flex-start;
     margin-left: 2rem;
-    padding-top: 10rem;
+    margin-block: 10rem 3rem;
+
   }
 
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .hero-images {
