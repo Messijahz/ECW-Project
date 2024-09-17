@@ -890,6 +890,10 @@ a:hover {
     line-height: 130%;
   }
 
+  a {
+    color: var(--color-white);
+  }
+
   @media (min-width: 1296px) {
     display: block;
 
@@ -913,7 +917,8 @@ a:hover {
   width: 480px;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "headline headline"
+  grid-template-areas: "headline headline";
+
 }
 
 .money-information2 {
@@ -936,7 +941,9 @@ a:hover {
   margin-block: 1rem;
 }
 
-.moneytransfer-text {}
+.moneybutton-container {
+  z-index: 100;
+}
 
 .money-checked-list {
   list-style-type: none;
