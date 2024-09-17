@@ -883,6 +883,8 @@ a:hover {
 
 #moneytransfer {
   display: none;
+  width: 1296px;
+  margin-block: 5rem 7rem;
 
   h2 {
     font-size: 32px;
@@ -895,39 +897,60 @@ a:hover {
   }
 
   @media (min-width: 1296px) {
-    display: block;
-
-    .money-information1 {
-      width: 400px;
-      height: 320px;
-      text-align: left;
-    }
-
-    .money-images {
-      width: 400px;
-      height: 400px;
-      position: relative;
-    }
+    display: grid;
   }
+}
+
+.money-transfer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "textcontent1 images1"
+    "images2 textcontent2";
+  row-gap: 8rem;
+}
+
+.money-information1 {
+  grid-area: textcontent1;
+  width: 400px;
+  height: 460px;
+  text-align: left;
+  align-content: center
+}
+
+.money-images1 {
+  grid-area: images1;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.money-images2 {
+  grid-area: images2;
+  width: 400px;
+  height: 400px;
+  position: relative;
 }
 
 .money-container {
   display: grid;
+  grid-area: textcontent2;
   text-align: left;
-  width: 480px;
+  width: 500px;
+  height: 500px;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "headline headline";
-
 }
 
 .money-information2 {
   grid-area: headline;
+  align-content: center;
 }
 
 .moneytransfer-logos-container {
-  width: 230px;
-  margin-block: .5rem;
+  width: 240px;
+  height: 60px;
+  margin-bottom: 1rem;
 }
 
 .moneytransfer-logos {
@@ -938,11 +961,7 @@ a:hover {
   background-color: var(--color-gray100);
   justify-content: center;
   align-items: center;
-  margin-block: 1rem;
-}
-
-.moneybutton-container {
-  z-index: 100;
+  margin-bottom: 1rem;
 }
 
 .money-checked-list {
