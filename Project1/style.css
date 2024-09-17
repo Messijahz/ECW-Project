@@ -498,8 +498,6 @@ a:hover {
 
 }
 
-
-
 .btn-download-app {
   background-color: var(--color-gray900);
   color: var(--color-white);
@@ -590,7 +588,6 @@ a:hover {
   box-shadow: 0px -8px 15px rgba(82, 48, 185, 0.2);
 }
 
-
 .logotypes-container {
   display: none;
 
@@ -634,11 +631,13 @@ a:hover {
 
 #features {
 
+  margin-block: 2rem 4.5rem;
+
   h2 {
     color: var(--color-gray900);
     font-size: 28px;
     line-height: 36px;
-    margin-block: 36px 23px;
+    margin-bottom: 23px;
   }
 
   h3 {
@@ -656,6 +655,12 @@ a:hover {
     line-height: 29px;
     margin: 0px;
   }
+
+  @media (min-width: 1296px) {
+    h2 {
+      font-size: 40px;
+    }
+  }
 }
 
 .features-grid-container {
@@ -665,24 +670,44 @@ a:hover {
   grid-template-areas: "headline"
     "content";
 
+
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "headline headline"
-      "content";
+      "content content";
   }
 
   @media (min-width: 1296px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "headline headline"
-      "content";
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas: "images headline headline"
+      "images content content"
+      "images content content";
+    margin-block: 4rem;
   }
 }
 
+.iphone12image {
+  grid-area: images;
+  display: none;
 
+  @media (min-width: 1296px) {
+    display: grid;
+    align-items: left;
 
+    .iphone12 {
+      width: auto;
+      height: 100%;
+      margin-left: 1rem
+    }
+  }
+}
 
 .app-features-headline {
   grid-area: headline;
+
+  @media (min-width: 1296px) {
+    text-align: left;
+  }
 }
 
 .features-card-container {
@@ -690,16 +715,17 @@ a:hover {
   grid-area: content;
   justify-content: center;
 
-  @media (min-width: 768px) {}
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
 }
 
 .features-card {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
-  width: 384px;
-  margin-block: 32px;
-  padding-inline: 12px;
+  gap: 1.5rem;
+  width: 325px;
+  margin-block: 1.2rem;
 }
 
 .features-card-logos {
@@ -737,7 +763,7 @@ a:hover {
   h3 {
     color: var(--color-gray900);
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 30px;
     margin-bottom: 12px;
     padding-inline: 60px;
@@ -755,7 +781,94 @@ a:hover {
     margin-bottom: 57px;
     padding-inline: 15px;
   }
+
+  .information-mobiles-comntainer {
+
+    @media (min-width: 1296px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12rem;
+    }
+  }
+
+  .centermobile {
+    width: 202px;
+    height: auto;
+  }
 }
+
+.information-text-container {
+  @media (min-width: 768px) {
+    padding-inline: 5rem;
+  }
+
+  @media (min-width: 1296px) {
+    padding-inline: 18rem;
+  }
+}
+
+.information-h3-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1296px) {
+    display: none;
+  }
+}
+
+.information-h3-tablet {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 1296px) {
+    display: none;
+  }
+}
+
+.information-h3-desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1296px) {
+    display: block;
+  }
+}
+
+.information-mobile-tablet {
+  @media (min-width: 1296px) {
+    display: none;
+  }
+}
+
+.information-tablet-desktop {
+  display: none;
+
+  @media (min-width: 1296px) {
+    display: block;
+  }
+}
+
+.tablet-image {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media (min-width: 1296px) {
+    display: inline-block;
+  }
+}
+
+
 
 #faq {
 
