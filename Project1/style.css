@@ -306,6 +306,19 @@ a:hover {
   }
 }
 
+.btn-moneytransfer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 160px;
+  font-size: 14px;
+}
+
+.btn-moneytransfer i {
+  margin-left: 1rem;
+}
+
 .btn-primary:hover {
   background-color: var(--color-gray600);
   color: var(--color-white);
@@ -438,7 +451,6 @@ a:hover {
     margin-block: 10rem 3rem;
 
   }
-
 }
 
 .link {
@@ -729,10 +741,10 @@ a:hover {
 }
 
 .features-card-logos {
+  display: flex;
   border-radius: 8px;
   width: 60px;
   height: 60px;
-  display: flex;
   background-color: var(--color-gray100);
   align-items: center;
   justify-content: center;
@@ -869,6 +881,93 @@ a:hover {
 }
 
 
+#moneytransfer {
+  display: none;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 130%;
+  }
+
+  @media (min-width: 1296px) {
+    display: block;
+
+    .money-information1 {
+      width: 400px;
+      height: 320px;
+      text-align: left;
+    }
+
+    .money-images {
+      width: 400px;
+      height: 400px;
+      position: relative;
+    }
+  }
+}
+
+.money-container {
+  display: grid;
+  text-align: left;
+  width: 480px;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "headline headline"
+}
+
+.money-information2 {
+  grid-area: headline;
+}
+
+.moneytransfer-logos-container {
+  width: 230px;
+  margin-block: .5rem;
+}
+
+.moneytransfer-logos {
+  display: grid;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-gray100);
+  justify-content: center;
+  align-items: center;
+  margin-block: 1rem;
+}
+
+.moneytransfer-text {}
+
+.money-checked-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-block: 2rem;
+}
+
+.money-checked-list li {
+  background-image: url('/pictures/bx-check-circle.svg');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  padding-left: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.inner-image2-top {
+  position: absolute;
+  width: 330px;
+  height: auto;
+  bottom: 10px;
+  right: -63px;
+}
+
+.inner-image1-top {
+  position: absolute;
+  width: 260px;
+  height: 117px;
+  bottom: -50px;
+  right: -60px;
+}
 
 #faq {
 
