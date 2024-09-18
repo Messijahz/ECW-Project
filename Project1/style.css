@@ -1264,7 +1264,6 @@ a:hover {
   }
 }
 
-
 .information-box:first-child {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -1276,15 +1275,12 @@ a:hover {
   border-bottom: none;
 }
 
-
 .contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-
 
 .contact-btn {
   display: flex;
@@ -1345,11 +1341,36 @@ a:hover {
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 1296px) {
+    width: 1296px;
+  }
+}
+
+.hide-me-desktop {
+  display: flex;
+
+  @media (min-width: 1296px) {
+    display: none;
+  }
+}
+
+.hide-me-mobile-tablet {
+  display: none;
+
+  @media (min-width: 1296px) {
+    display: block;
   }
 }
 
 .subscribe-text {
   width: 200px;
+
+  @media (min-width: 1296px) {
+    width: 600px;
+  }
 }
 
 .subscribe-info {
@@ -1359,6 +1380,10 @@ a:hover {
   padding-block: 2rem;
   padding-inline: 1rem;
   gap: 1.5rem;
+
+  @media (min-width: 1296px) {
+    width: 600px;
+  }
 
 }
 
