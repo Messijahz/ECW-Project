@@ -1284,6 +1284,8 @@ a:hover {
   align-items: center;
 }
 
+
+
 .contact-btn {
   display: flex;
   justify-content: center;
@@ -1325,6 +1327,7 @@ a:hover {
   width: auto;
   height: auto;
   border-radius: 10px;
+  padding: 2rem;
 
   img {
     height: auto;
@@ -1338,6 +1341,15 @@ a:hover {
     padding-right: 1.5rem;
     text-align: left;
   }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.subscribe-text {
+  width: 200px;
 }
 
 .subscribe-info {
@@ -1346,13 +1358,14 @@ a:hover {
   align-items: center;
   padding-block: 2rem;
   padding-inline: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
 
 }
 
 .subscribe-form {
   display: flex;
-  padding-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form {
