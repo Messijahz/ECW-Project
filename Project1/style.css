@@ -1431,8 +1431,14 @@ a:hover {
 }
 
 footer {
+  margin-block: 0rem;
+
   p {
     color: var(--color-gray600);
-    padding: 1.5rem 3rem;
+    padding: 2rem 3rem;
+  }
+
+  @media (min-width: 1296px) {
+    margin-block: 3rem;
   }
 }
