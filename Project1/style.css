@@ -1028,7 +1028,7 @@ a:hover {
 
 .stories-container {
   display: flex;
-  margin-block: 5rem;
+  margin-block: 5rem 7rem;
 }
 
 .clients-headline {
@@ -1048,7 +1048,7 @@ a:hover {
   width: 370px;
   height: auto;
   padding: 48px 24px 24px 24px;
-  margin-inline: 1rem;
+  margin-left: 1rem;
   text-align: left;
 }
 
@@ -1109,9 +1109,35 @@ a:hover {
       line-height: 140%;
     }
 
+    h3 {
+      text-align: center;
+    }
+
     h4 {
       font-size: 16px;
     }
+  }
+
+  @media (min-width: 1296px) {
+    margin-top: 6rem;
+    width: 1296px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 140%;
+      text-align: left;
+    }
+
+    h3 {
+      text-align: left;
+      padding-top: 3rem;
+    }
+
+    h4 {
+      font-size: 16px;
+      text-align: left;
+    }
+
   }
 }
 
@@ -1119,11 +1145,16 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-block: 5rem;
+  padding-block: 0rem;
+
+  @media (min-width: 768px) {
+    padding-block: 1rem;
+  }
 
   @media (min-width: 1296px) {
     flex-direction: row;
-    width: 1260px;
+    justify-content: space-between;
+    padding-bottom: 7rem;
   }
 }
 
@@ -1131,7 +1162,8 @@ a:hover {
 
   @media (min-width: 1296px) {
     display: flex;
-    width: 400px;
+    width: 450px;
+    padding-block: 0rem;
   }
 }
 
@@ -1144,15 +1176,73 @@ a:hover {
   @media (min-width: 768px) {
     align-items: center;
     text-align: center;
-    display: flex;
     margin-inline: 10rem;
   }
 
   @media (min-width: 1296px) {
     align-items: center;
     text-align: center;
-    display: flex;
+    margin-inline: auto 0rem;
+    padding-inline: 0rem;
+    width: 400px;
     margin-inline: 0rem;
+    padding-block: 0rem;
+  }
+
+  .contact-box-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1.1rem;
+    width: 200px;
+    height: 170px;
+    border: 1px solid var(--color-gray300);
+    border-radius: 8px;
+    background: var(--color-white);
+    box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+
+    i .purple-text {
+      color: var(--color-primary);
+    }
+
+    i .green-text {
+      color: var(--color-system-success);
+    }
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .purple-text {
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    margin-right: 1rem;
+  }
+
+  .green-text {
+    justify-content: center;
+    align-items: center;
+    color: var(--color-system-success);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    margin-right: 1rem;
   }
 
 }
@@ -1171,9 +1261,8 @@ a:hover {
   }
 
   @media (min-width: 1296px) {
-    margin-inline: auto 2rem;
     align-items: end;
-    width: 500px;
+    width: 750px;
   }
 }
 
@@ -1271,7 +1360,6 @@ a:hover {
 
     border-radius: 10px;
   }
-
 }
 
 .buttons-container-faq {
@@ -1323,6 +1411,14 @@ a:hover {
   border-radius: 10px;
   margin-block: 3rem;
   border: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1296px) {
+    display: none;
+  }
 }
 
 .contact-btn:hover {
@@ -1349,7 +1445,7 @@ a:hover {
   width: auto;
   height: auto;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1rem;
 
   img {
     height: auto;
@@ -1376,7 +1472,6 @@ a:hover {
 }
 
 .hide-me-desktop {
-  display: flex;
 
   @media (min-width: 1296px) {
     display: none;
