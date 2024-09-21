@@ -121,7 +121,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
   .container {
     padding: 0 1.5rem;
     margin: 0 auto;
@@ -131,7 +130,6 @@ a:hover {
 }
 
 @media (min-width: 1296px) {
-
   .container {
     padding: 0 1.5rem;
     margin: 0 auto;
@@ -171,7 +169,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -185,7 +182,6 @@ a:hover {
 }
 
 @media (min-width: 1296px) {
-
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -217,7 +213,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
   .navigation {
     display: flex;
     align-items: left;
@@ -245,7 +240,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
   .darkmode {
     display: block;
     font-weight: 600;
@@ -306,6 +300,12 @@ a:hover {
   }
 }
 
+.btn-primary:hover {
+  background-color: var(--color-gray600);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
 .btn-moneytransfer {
   display: flex;
   justify-content: center;
@@ -317,12 +317,6 @@ a:hover {
 
 .btn-moneytransfer i {
   margin-left: 1rem;
-}
-
-.btn-primary:hover {
-  background-color: var(--color-gray600);
-  color: var(--color-white);
-  text-decoration: none;
 }
 
 .btn-primary i {
@@ -374,9 +368,7 @@ a:hover {
       padding-inline: 2rem;
       margin: 0;
     }
-
   }
-
 }
 
 .hero-content {
@@ -507,7 +499,6 @@ a:hover {
       height: 100%;
     }
   }
-
 }
 
 .btn-download-app {
@@ -613,7 +604,7 @@ a:hover {
 
   @media (min-width: 1296px) {
     gap: 1rem;
-    padding-block: 4rem 1.5rem;
+    padding-block: 6rem 1.5rem;
   }
 }
 
@@ -642,7 +633,6 @@ a:hover {
 }
 
 #features {
-
   margin-block: 2rem 4.5rem;
 
   h2 {
@@ -668,9 +658,21 @@ a:hover {
     margin: 0px;
   }
 
+  @media (min-width: 768px) {
+    margin-block: 2rem 4.5rem;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 800;
+    }
+  }
+
   @media (min-width: 1296px) {
+    margin-block: 5rem 4.5rem;
+
     h2 {
       font-size: 40px;
+      font-weight: 800;
     }
   }
 }
@@ -694,7 +696,6 @@ a:hover {
     grid-template-areas: "images headline headline"
       "images content content"
       "images content content";
-    margin-block: 4rem;
   }
 }
 
@@ -743,7 +744,7 @@ a:hover {
 .features-card-logos {
   display: flex;
   border-radius: 8px;
-  width: 60px;
+  width: 75px;
   height: 60px;
   background-color: var(--color-gray100);
   align-items: center;
@@ -768,8 +769,8 @@ a:hover {
     text-align: center;
     font-size: 28px;
     line-height: 36px;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
   }
 
   h3 {
@@ -790,23 +791,43 @@ a:hover {
     text-align: center;
     font-size: 16px;
     line-height: 25px;
-    margin-bottom: 57px;
+    margin-bottom: 7rem;
     padding-inline: 15px;
   }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  @media (min-width: 1296px) {
+    h2 {
+      font-size: 40px;
+      margin-block: 6rem 4rem;
+    }
+  }
+
 
   .information-mobiles-comntainer {
 
     @media (min-width: 1296px) {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      gap: 12rem;
+      gap: 6rem;
     }
+
   }
 
   .centermobile {
     width: 202px;
     height: auto;
+
+    @media (min-width: 1296px) {
+      width: 320px;
+      height: auto;
+    }
   }
 }
 
@@ -877,6 +898,8 @@ a:hover {
 
   @media (min-width: 1296px) {
     display: inline-block;
+    width: 320px;
+    height: auto;
   }
 }
 
@@ -884,7 +907,7 @@ a:hover {
 #moneytransfer {
   display: none;
   width: 1296px;
-  margin-block: 5rem 7rem;
+  margin-block: 7rem 7rem;
 
   h2 {
     font-size: 32px;
@@ -906,7 +929,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "textcontent1 images1"
     "images2 textcontent2";
-  row-gap: 8rem;
+  gap: 8rem;
 }
 
 .money-information1 {
@@ -1028,7 +1051,7 @@ a:hover {
 
 .stories-container {
   display: flex;
-  margin-block: 5rem 7rem;
+  margin-block: 6rem 7rem;
 }
 
 .clients-headline {
@@ -1575,6 +1598,10 @@ a:hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 0 10px 10px 0;
+}
+
+.contact-btn-subscribe:hover {
+  background-color: var(--color-gray600);
 }
 
 
