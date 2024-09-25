@@ -45,6 +45,46 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+html {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+
+  /* Color Primary */
+  --color-primary: #6366f1;
+  --color-Gradient: linear-gradient(180deg,
+      rgba(99, 102, 241, 0.10) 0%,
+      rgba(218, 70, 239, 0.05) 50%,
+      rgba(19, 16, 34, 0.01) 100%);
+
+
+  /* Color grayscale */
+  --color-gray900: #0b0f19;
+  --color-gray800: #33354d;
+  --color-gray700: #565973;
+  --color-gray600: #9397ad;
+  --color-gray500: #b4b7c9;
+  --color-gray400: #d4d7e5;
+  --color-gray300: #e2e5f1;
+  --color-gray200: #eff2fc;
+  --color-gray100: #f3f6ff;
+  --color-white: #ffffff;
+
+  /* System colors: */
+  --color-system-error: #ef4444;
+  --color-system-success: #22c55e;
+  --color-system-warning: #ffba08;
+  --color-system-info: #4c82f7;
+
+  /* Buttons */
+  --color-button-primary: border-radius: 8px;
+  background: var(--Brand-Primary, var(--color-primary));
+  --color-button-secondary: border-radius: 8px;
+  background: var(--Gray-200, #EFF2cdFC);
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -137,8 +177,6 @@ a:hover {
   }
 }
 
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -147,7 +185,13 @@ a:hover {
   margin-block: 1rem;
   padding-inline: 1rem;
   gap: 1rem;
+}
 
+.features-link {
+  color: var(--color-gray700);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .features-menu {
@@ -165,7 +209,6 @@ a:hover {
   .main-menu {
     display: block;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -243,6 +286,7 @@ a:hover {
   .darkmode {
     display: block;
     font-weight: 600;
+    color: var(--color-gray700);
   }
 }
 
@@ -282,6 +326,11 @@ a:hover {
   @media (min-width: 1296px) {
     display: none;
   }
+}
+
+.text-signin {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .btn-primary {
@@ -406,7 +455,11 @@ a:hover {
       width: 550px;
     }
   }
+}
 
+.hero-text {
+  font-size: 14px;
+  color: var(--color-gray700);
 }
 
 .hero-buttons {
@@ -419,7 +472,6 @@ a:hover {
     flex-direction: row;
     align-items: flex-start;
     margin-left: 2rem;
-
   }
 }
 
@@ -568,6 +620,10 @@ a:hover {
   color: var(--color-gray900);
 }
 
+.btn-circle a:hover {
+  text-decoration: none;
+}
+
 .arrow-down-btn-grey {
   background-color: var(--color-gray100);
   border-radius: 1px solid;
@@ -651,8 +707,6 @@ a:hover {
   }
 
   p {
-    color: var(--color-gray700);
-    font-size: 18px;
     font-weight: 400;
     line-height: 29px;
     margin: 0px;
@@ -723,6 +777,11 @@ a:hover {
   }
 }
 
+.features-text {
+  color: var(--color-gray600);
+  font-size: 18px;
+}
+
 .features-card-container {
   display: grid;
   grid-area: content;
@@ -791,7 +850,7 @@ a:hover {
     text-align: center;
     font-size: 16px;
     line-height: 25px;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     padding-inline: 15px;
   }
 
@@ -963,6 +1022,14 @@ a:hover {
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "headline headline";
+}
+
+.moneytransfer-text {
+  color: var(--color-gray700);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
 }
 
 .money-information2 {
@@ -1270,6 +1337,7 @@ a:hover {
   align-items: flex-start;
   text-align: left;
   font-size: 14px;
+  color: var(--color-gray700);
   font-weight: 400;
   line-height: 160%;
   padding: 2rem;
@@ -1502,7 +1570,7 @@ a:hover {
   }
 
   h3 {
-    font-size: 21.6px;
+    font-size: 23px;
     font-weight: 800;
     line-height: 30.2px;
     padding-right: 1.5rem;
@@ -1521,7 +1589,6 @@ a:hover {
 }
 
 .hide-me-desktop {
-
   @media (min-width: 1296px) {
     display: none;
   }
@@ -1575,7 +1642,6 @@ a:hover {
   max-width: 220px;
   height: 50px;
   border: 1px solid var(--color-gray400);
-  border-radius: 10px;
   font-size: 1rem;
   border-right: none;
   border-radius: 10px 0 0 10px;
@@ -1604,6 +1670,14 @@ a:hover {
   background-color: var(--color-gray600);
 }
 
+.form-input {
+  background-color: var(--color-white);
+}
+
+#email::placeholder {
+  color: var(--color-gray500);
+}
+
 
 footer {
   margin-block: 0rem;
@@ -1611,6 +1685,7 @@ footer {
   p {
     color: var(--color-gray600);
     padding: 2rem 3rem;
+    font-size: 14px;
   }
 
   @media (min-width: 1296px) {

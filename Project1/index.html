@@ -17,15 +17,16 @@
     <div class="background-gradient">
     <div class="navbar container">
       <div class="main-menu">
-      <a href="#">
+
         <div class="mainlogo">
           
           <img src="pictures/Logo.svg" alt="Picture of Silicon logotype" />
-          
-            <a class="features-menu" href="features.html">Features</a>
+        
+            <a class="features-menu" href="#"><span class="features-link">Features</span></a>
           </div>
         </div>
-      </a>
+      
+      <script src="darkmode.js"></script>
       <div class="navigation">
         <div class="navigation-tablet">
           <p class="darkmode">Dark Mode</p>
@@ -33,12 +34,12 @@
             <div class="toggle-circle"></div>
           </div>
         </div>
-        <a id="auth-sigin" href="#" class="btn-primary">
+        <a id="auth-sigin" href="#" class="btn-primary text-signin">
           <i class="fa-thin fa-user-large"></i>
           <span>Sign in / up</span>
           </a>
         <img
-          class="hamburger"
+          class="hamburger" aria-controls="menu" aria-expanded="false"
           src="pictures/hamburger.svg"
           alt="Hamburger menu"
         />
@@ -79,7 +80,7 @@
             <span class="btn-circle">
               <i class="fa-solid fa-chevron-down"></i>
             </span>
-            <span>Discover more</span>
+            <span class="hero-text">Discover more</span>
           </a>
         </div>
         </div>
@@ -126,7 +127,7 @@
       <div class="features-grid-container container">
       <div class="app-features-headline">
         <h2>App Features</h2>
-        <p>
+        <p class="features-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
           volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque
           volutpat ligula est. Mattis fermentum, at nec lacus.
@@ -248,9 +249,9 @@
         <div class="money-information1">
           <h2>Make your money transfer simple and clear</h2>
           <ul class="money-checked-list">
-            <li>Banking transactions are free for you</li>
-            <li>No monthly cash commission</li>
-            <li>Manage payments and transactions online</li>
+            <li class="moneytransfer-text">Banking transactions are free for you</li>
+            <li class="moneytransfer-text">No monthly cash commission</li>
+            <li class="moneytransfer-text">Manage payments and transactions online</li>
           </ul>
           <a href="#" class="btn-primary btn-moneytransfer">
             <span>Learn more</span>
@@ -284,12 +285,10 @@
                 A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.
               </p>
             </div>
-            <div class="btn-primary btn-moneytransfer">
-              <a href="#">
+              <a href="#" class="btn-primary btn-moneytransfer">
               <span>Learn more</span>
               <i class="fa-solid fa-arrow-right"></i>
               </a>
-              </div>
           </div>
         <div class="money-images2">
           <img src="pictures/inner2.svg" alt="">
@@ -506,9 +505,9 @@
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="&#xf003;   Your email"
-                  style="font-family: Arial, FontAwesome"
-                  required
+                  placeholder="&#xf003;   Your Email"
+                  style="font-family: Arial, 'FontAwesome'"
+                  required autocomplete="email"
                 />
               </div>
               <button class="contact-btn-subscribe" type="submit">
