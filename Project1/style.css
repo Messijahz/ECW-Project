@@ -5,10 +5,18 @@
 :root {
   /* Color Primary */
   --color-primary: #6366f1;
-  --color-Gradient: linear-gradient(90deg,
-      #6366f1 0%,
-      #8b5cf6 50%,
-      #d946ef 100%);
+
+  /* Background colors */
+  --color-primarybg: #fff;
+  --color-secondarybg: #f3f6ff;
+  --color-thirdbg: #fff;
+  --color-border: #e2e5f1;
+  --color-boxshadow: 8px 8px 12px 1px rgba(19, 16, 34, 0.06),
+    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  --color-Gradient: radial-gradient(118% 116.18% at 50% 100%,
+      rgba(99, 102, 241, 0.1) 0%,
+      rgba(218, 70, 239, 0.05) 41.83%,
+      rgba(241, 244, 253, 0.07) 82.52%);
 
   /* Color grayscale */
   --color-gray900: #0b0f19;
@@ -21,6 +29,8 @@
   --color-gray200: #eff2fc;
   --color-gray100: #f3f6ff;
   --color-white: #ffffff;
+  --color-headline: #0b0f19;
+  --color-text: #565973;
 
   /* System colors: */
   --color-system-error: #ef4444;
@@ -38,23 +48,20 @@
   --transition-time: all 0.2s;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-html {
-  color-scheme: light;
-}
-
 .dark {
   color-scheme: dark;
 
   /* Color Primary */
   --color-primary: #6366f1;
-  --color-Gradient: linear-gradient(180deg,
+
+  /* Background colors */
+  --color-primarybg: #0c0f19;
+  --color-secondarybg: #161822;
+  --color-thirdbg: #1f212b;
+  --color-border: #565973;
+  --color-boxshadow: 8px 8px 12px 1px rgba(19, 16, 34, 0.811),
+    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  --color-Gradient: linear-gradient(0deg,
       rgba(99, 102, 241, 0.10) 0%,
       rgba(218, 70, 239, 0.05) 50%,
       rgba(19, 16, 34, 0.01) 100%);
@@ -71,6 +78,8 @@ html {
   --color-gray200: #eff2fc;
   --color-gray100: #f3f6ff;
   --color-white: #ffffff;
+  --color-headline: #fff;
+  --color-text: #fff;
 
   /* System colors: */
   --color-system-error: #ef4444;
@@ -82,7 +91,18 @@ html {
   --color-button-primary: border-radius: 8px;
   background: var(--Brand-Primary, var(--color-primary));
   --color-button-secondary: border-radius: 8px;
-  background: var(--Gray-200, #EFF2cdFC);
+  background: #231f31;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  color-scheme: light dark;
 }
 
 body {
@@ -92,7 +112,7 @@ body {
   font-style: normal;
   font-size: 16px;
   color: var(--color-gray900);
-  background-color: var(--color-white);
+  background-color: var(--color-primarybg);
 
   display: flex;
   flex-direction: column;
@@ -105,7 +125,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-gray900);
+  color: var(--color-headline);
   font-weight: 800;
   font-style: normal;
 }
@@ -149,11 +169,12 @@ a:hover {
   color: var(--color-primary);
 }
 
+.underlined-link:hover {
+  text-decoration: underline;
+}
+
 .background-gradient {
-  background: radial-gradient(118% 116.18% at 50% 100%,
-      rgba(99, 102, 241, 0.1) 0%,
-      rgba(218, 70, 239, 0.05) 41.83%,
-      rgba(241, 244, 253, 0.07) 82.52%);
+  background: var(--color-Gradient)
 }
 
 .container {
@@ -234,7 +255,6 @@ a:hover {
     padding-inline: 2rem;
     gap: 1rem;
   }
-
 }
 
 .mainlogo {
@@ -275,7 +295,6 @@ a:hover {
 .navigation-tablet {
   display: flex;
   gap: 1rem;
-
 }
 
 .darkmode {
@@ -375,6 +394,7 @@ a:hover {
 .hero-container {
   display: grid;
   gap: 2rem;
+  color: var(--color-headline);
   grid-template-columns: 1fr;
   grid-template-areas: "headline"
     "content";
@@ -459,7 +479,7 @@ a:hover {
 
 .hero-text {
   font-size: 14px;
-  color: var(--color-gray700);
+  color: var(--color-text);
 }
 
 .hero-buttons {
@@ -493,7 +513,6 @@ a:hover {
     justify-content: flex-start;
     margin-left: 2rem;
     margin-block: 10rem 3rem;
-
   }
 }
 
@@ -666,6 +685,8 @@ a:hover {
 
 .logotype-box {
   display: none;
+  width: 187px;
+  height: 90px;
 
   @media (min-width: 768px) {
     display: block;
@@ -805,7 +826,7 @@ a:hover {
   border-radius: 8px;
   width: 75px;
   height: 60px;
-  background-color: var(--color-gray100);
+  background-color: var(--color-secondarybg);
   align-items: center;
   justify-content: center;
 }
@@ -821,10 +842,10 @@ a:hover {
 }
 
 #information {
-  background-color: var(--color-gray100);
+  background-color: var(--color-secondarybg);
 
   h2 {
-    color: var(--color-gray900);
+    color: var(--color-headline);
     text-align: center;
     font-size: 28px;
     line-height: 36px;
@@ -833,7 +854,7 @@ a:hover {
   }
 
   h3 {
-    color: var(--color-gray900);
+    color: var(--color-headline);
     text-align: center;
     font-size: 24px;
     line-height: 30px;
@@ -869,14 +890,12 @@ a:hover {
 
 
   .information-mobiles-comntainer {
-
     @media (min-width: 1296px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 6rem;
     }
-
   }
 
   .centermobile {
@@ -1048,7 +1067,7 @@ a:hover {
   border-radius: 8px;
   width: 60px;
   height: 60px;
-  background-color: var(--color-gray100);
+  background-color: var(--color-secondarybg);
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
@@ -1090,7 +1109,7 @@ a:hover {
 
   @media (min-width: 1296px) {
     display: flex;
-    background-color: var(--color-gray100);
+    background-color: var(--color-secondarybg);
   }
 
   p {
@@ -1104,7 +1123,7 @@ a:hover {
   .client-name {
     font-size: 16px;
     font-weight: 700;
-    color: var(--color-gray900);
+    color: var(--color-headline);
     padding-block: 0rem;
 
   }
@@ -1134,7 +1153,7 @@ a:hover {
   position: relative;
   border-radius: 8px;
   box-shadow: 0px 4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-  background-color: var(--color-white);
+  background-color: var(--color-thirdbg);
   width: 370px;
   height: auto;
   padding: 48px 24px 24px 24px;
@@ -1167,7 +1186,7 @@ a:hover {
   margin-block: 13px;
 
   h2 {
-    color: var(--color-gray900);
+    color: var(--color-headline);
     text-align: center;
     font-size: 25px;
     line-height: 32px;
@@ -1205,6 +1224,7 @@ a:hover {
 
     h4 {
       font-size: 16px;
+      color: var(--color-headline);
     }
   }
 
@@ -1343,9 +1363,9 @@ a:hover {
   padding: 2rem;
   width: 350px;
   height: 170px;
-  border: 1px solid var(--color-gray300);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
-  background: var(--color-white);
+  background: var(--color-secondbg);
   box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
 
   @media (min-width: 1296px) {
@@ -1364,8 +1384,6 @@ a:hover {
   border-radius: 10px;
   margin-inline: 1rem;
   border: 1px solid var(--color-gray300);
-
-
 
   @media (min-width: 768px) {
     border: none;
@@ -1406,7 +1424,8 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid var(--color-gray300);
+  background-color: var(--color-thirdbg);
+  /* border-bottom: 1px solid var(--color-gray300); */
   cursor: pointer;
   width: 100%;
   padding-inline: 1.2rem;
@@ -1417,7 +1436,7 @@ a:hover {
     font-size: 16px;
     font-weight: 700;
     line-height: 20.8px;
-    text-align: left;
+    text-align: leftgit;
     margin-right: auto;
   }
 
@@ -1442,19 +1461,18 @@ a:hover {
   @media (min-width: 1296px) {
     padding-bottom: 1rem;
   }
-
 }
 
 .information-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-gray300);
+  background-color: var(--color-thirdbg);
+  /* border-bottom: 1px solid var(--color-gray300); */
   cursor: pointer;
   width: 100%;
   padding-inline: 1.2rem;
   padding-block: 1rem;
-
 
   h4 {
     color: var(--color-gray900);
@@ -1473,9 +1491,7 @@ a:hover {
   }
 
   @media (min-width: 768px) {
-    box-shadow: 8px 8px 12px 1px rgba(19, 16, 34, 0.06),
-      0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-
+    box-shadow: var(--color-boxshadow);
     border-radius: 10px;
   }
 }
@@ -1541,6 +1557,7 @@ a:hover {
 
 .contact-btn:hover {
   background-color: #4c51bf;
+  text-decoration: underline;
 }
 
 .contact-btn:active {
@@ -1558,7 +1575,7 @@ a:hover {
   align-items: center;
   justify-items: center;
   flex-direction: column;
-  background-color: var(--color-gray100);
+  background-color: var(--color-secondarybg);
   width: auto;
   height: auto;
   border-radius: 10px;
