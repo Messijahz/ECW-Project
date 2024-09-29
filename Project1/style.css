@@ -43,6 +43,7 @@
   --color-system-info: #4c82f7;
 
   /* Buttons */
+  --color-btn-primary: #0b0f19;
   --color-button-primary: border-radius: 8px;
   background: var(--Brand-Primary, var(--color-primary));
   --color-button-secondary: border-radius: 8px;
@@ -96,6 +97,7 @@
   --color-system-info: #4c82f7;
 
   /* Buttons */
+  --color-btn-primary: #f3f6ff;
   --color-button-primary: border-radius: 8px;
   background: var(--Brand-Primary, var(--color-primary));
   --color-button-secondary: border-radius: 8px;
@@ -260,7 +262,7 @@ a:hover {
     align-items: center;
     height: auto;
     margin-block: 2rem;
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
     gap: 1rem;
   }
 }
@@ -448,7 +450,7 @@ a:hover {
       font-size: 56px;
       line-height: 130%;
       text-align: left;
-      padding-inline: 2rem;
+      padding-inline: 0rem;
       margin: 0;
     }
   }
@@ -484,7 +486,7 @@ a:hover {
 
     p {
       margin: 0rem;
-      padding-inline: 2.2rem;
+      padding-inline: 0rem;
       padding-top: 0rem;
       width: 550px;
     }
@@ -507,6 +509,10 @@ a:hover {
     align-items: flex-start;
     margin-left: 2rem;
   }
+
+  @media (min-width: 1296px) {
+    margin-left: 0rem;
+  }
 }
 
 .discover-more {
@@ -525,7 +531,7 @@ a:hover {
 
   @media (min-width: 1296px) {
     justify-content: flex-start;
-    margin-left: 2rem;
+    margin-left: 0rem;
     margin-block: 10rem 3rem;
   }
 }
@@ -605,7 +611,7 @@ a:hover {
 }
 
 .btn-mobile {
-  background-color: var(--color-gray900);
+  background-color: var(--color-btn-primary);
   border-radius: 10px;
   width: 365px;
   height: 50px;
@@ -613,7 +619,7 @@ a:hover {
   border: none;
 
   @media (min-width: 768px) {
-    background-color: var(--color-gray900);
+    background-color: var(--color-btn-primary);
     border-radius: 10px;
     width: 135px;
     height: 45px;
@@ -623,7 +629,6 @@ a:hover {
 }
 
 .app-images {
-
   @media (min-width: 768px) {
     height: 75%;
     width: 75%;
