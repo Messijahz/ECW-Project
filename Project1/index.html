@@ -14,7 +14,9 @@
   </head>
 
   <body>
+    
     <div class="background-gradient">
+      <nav>
     <div class="navbar container">
       <div class="main-menu">
 
@@ -34,7 +36,7 @@
             <div class="toggle-circle"></div>
           </div>
         </div>
-        <a id="auth-sigin" href="#" class="btn-primary text-signin">
+        <a id="auth-signin" href="#" class="btn-primary text-signin">
           <i class="fa-thin fa-user-large"></i>
           <span class="underlined-link">Sign in / up</span>
           </a>
@@ -44,7 +46,8 @@
       </div>
       <script src="toggle.js"></script>
     </div>
-
+  </nav>
+<main>
     <section id="hero">
       <div class="hero-container container">
         <div class="hero-headline">
@@ -52,11 +55,15 @@
         </div>
 
         <div class="hero-content">
-          <p>
-            We offer you a new generation of the mobile banking. Save, spend &
-            manage money in your pocket.
+          <div class="hero-text">
+            <p class="hide-me-tablet hide-me-desktop">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+          <p class="hide-me-mobile">
+            We offer you a new generation of the mobile banking.
           </p>
-
+          <p class="hide-me-mobile">
+            Save, spend & manage money in your pocket.
+          </p>
+        </div>
           <div class="hero-buttons">
             <a class="btn-mobile apple-btn-mobile" href="#">
               <img
@@ -78,7 +85,7 @@
             <span class="btn-circle">
               <i class="fa-solid fa-chevron-down"></i>
             </span>
-            <span class="hero-text underlined-link">Discover more</span>
+            <span class="hero-span" underlined-link">Discover more</span>
           </a>
         </div>
         </div>
@@ -503,7 +510,7 @@
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="&#xf003;   Your Email"
+                  placeholder=" &#xf003;   Your Email"
                   style="font-family: Arial, 'FontAwesome'"
                   required autocomplete="email"
                 />
@@ -517,7 +524,7 @@
       </div>
       </div>
     </section>
-
+  </main>
     <footer>
       <p>© 2024 Silicon. All rights reserved. Credit MadrasThemes</p>
     </footer>
