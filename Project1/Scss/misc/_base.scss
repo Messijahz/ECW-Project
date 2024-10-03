@@ -24,7 +24,15 @@ footer,
 main,
 aside,
 nav,
-blockquote {
+blockquote,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -35,7 +43,26 @@ svg {
 }
 
 body {
-  @include text;
   font-size: 16px;
   color: #535656;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1296px) {
+  .container {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    max-width: 1296px;
+  }
 }

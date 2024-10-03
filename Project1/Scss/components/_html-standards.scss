@@ -10,6 +10,7 @@ body {
   font-size: 16px;
   color: var(--color-gray900);
   background-color: var(--color-primarybg);
+
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -72,7 +73,3 @@ a:hover {
 .background-gradient {
   background: var(--color-Gradient);
 }
-
-.container {
-  margin: 0 auto;
-}/*# sourceMappingURL=html-standards.css.map */

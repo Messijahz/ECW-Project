@@ -24,11 +24,13 @@
     display: block;
   }
 }
+
 @media (min-width: 1296px) {
   .main-menu {
     display: block;
   }
 }
+
 @media (min-width: 768px) {
   .navbar {
     display: flex;
@@ -40,6 +42,7 @@
     gap: 1rem;
   }
 }
+
 @media (min-width: 1296px) {
   .navbar {
     display: flex;
@@ -51,6 +54,7 @@
     gap: 1rem;
   }
 }
+
 .mainlogo {
   display: flex;
   align-items: center;
@@ -77,6 +81,7 @@
     gap: 4rem;
   }
 }
+
 @media (min-width: 1296px) {
   .navigation {
     gap: 2rem;
@@ -85,8 +90,10 @@
     align-items: center;
   }
 }
+
 .navigation-tablet {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -101,14 +108,14 @@
     color: var(--color-gray700);
   }
 }
+
 .hamburger i {
   color: var(--color-text);
   font-size: 30px;
   cursor: pointer;
   margin-left: 1rem;
-}
-@media (min-width: 1296px) {
-  .hamburger i {
+
+  @media (min-width: 1296px) {
     display: none;
   }
 }
@@ -116,4 +123,4 @@
 .text-signin {
   font-size: 14px;
   font-weight: 600;
-}/*# sourceMappingURL=navigation.css.map */
+}

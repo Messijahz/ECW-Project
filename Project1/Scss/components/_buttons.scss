@@ -38,9 +38,8 @@
   align-items: center;
   text-decoration: none;
   display: none;
-}
-@media (min-width: 1296px) {
-  .btn-primary {
+
+  @media (min-width: 1296px) {
     display: block;
   }
 }
@@ -55,6 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
   height: 44px;
   width: 160px;
   font-size: 14px;
@@ -72,9 +72,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-@media (min-width: 768px) {
-  .flex-buttons-center {
+
+  @media (min-width: 768px) {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -91,9 +90,8 @@
   width: 365px;
   justify-content: center;
   margin-top: 1rem;
-}
-@media (min-width: 768px) {
-  .btn-container {
+
+  @media (min-width: 768px) {
     flex-direction: row;
     height: 45px;
     width: 150px;
@@ -153,9 +151,8 @@
   height: 50px;
   cursor: pointer;
   border: none;
-}
-@media (min-width: 768px) {
-  .btn-mobile {
+
+  @media (min-width: 768px) {
     background-color: var(--color-btn-primary);
     border-radius: 10px;
     width: 135px;
@@ -230,14 +227,12 @@
   border-radius: 10px;
   margin-block: 3rem;
   border: none;
-}
-@media (min-width: 768px) {
-  .contact-btn {
+
+  @media (min-width: 768px) {
     display: none;
   }
-}
-@media (min-width: 1296px) {
-  .contact-btn {
+
+  @media (min-width: 1296px) {
     display: none;
   }
 }
@@ -267,4 +262,4 @@
 
 .contact-btn-subscribe:hover {
   background-color: var(--color-gray600);
-}/*# sourceMappingURL=buttons.css.map */
+}

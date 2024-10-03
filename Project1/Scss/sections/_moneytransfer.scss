@@ -2,17 +2,18 @@
   display: none;
   width: 1296px;
   margin-block: 7rem 7rem;
-}
-#moneytransfer h2 {
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 130%;
-}
-#moneytransfer a {
-  color: var(--color-white);
-}
-@media (min-width: 1296px) {
-  #moneytransfer {
+
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 130%;
+  }
+
+  a {
+    color: var(--color-white);
+  }
+
+  @media (min-width: 1296px) {
     display: grid;
   }
 }
@@ -20,7 +21,9 @@
 .money-transfer-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "textcontent1 images1" "images2 textcontent2";
+  grid-template-areas:
+    "textcontent1 images1"
+    "images2 textcontent2";
   gap: 8rem;
 }
 
@@ -67,7 +70,8 @@
 
 .money-information2 {
   grid-area: headline;
-  align-content: center;
+  align-content: end;
+  margin-bottom: 1rem;
 }
 
 .moneytransfer-logos-container {
@@ -116,4 +120,4 @@
   height: 117px;
   bottom: -50px;
   right: -60px;
-}/*# sourceMappingURL=moneytransfer.css.map */
+}
