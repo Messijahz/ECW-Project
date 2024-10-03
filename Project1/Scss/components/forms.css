@@ -1,0 +1,11 @@
+.form-input {
+  background-color: var(--color-input);
+}
+
+#email::-moz-placeholder {
+  color: var(--color-text600-white);
+}
+
+#email::placeholder {
+  color: var(--color-text600-white);
+}/*# sourceMappingURL=forms.css.map */

@@ -248,7 +248,6 @@ a:hover {
 
 .features-menu {
   display: none;
-
 }
 
 @media (min-width: 1296px) {
@@ -671,7 +670,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
 }
 
 .btn-download-app:hover {
@@ -980,7 +978,6 @@ a:hover {
 
     p {
       margin-bottom: 6rem;
-
     }
   }
 
@@ -1745,7 +1742,6 @@ a:hover {
     width: 600px;
     padding-block: 2rem;
   }
-
 }
 
 .subscribe-form {
