@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gissa</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Let's play a game.</h1>
+      </div>
+      <p>Enter a value between 1 and 100</p>
+
+      <div id="message-box" class="message-box">
+        <p class="result-message"></p>
+      </div>
+      <div class="guessing-box">
+        <input
+          id="guess-input"
+          class="form-input"
+          type="number"
+          placeholder="Enter your guess wiseley"
+        />
+        <button id="submit-guess" class="btn">Guess!</button>
+      </div>
+
+      <div class="guesses">
+        <p class="guesses-left">Guesses left: 10</p>
+        <p class="your-guesses">Your guesses:</p>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
