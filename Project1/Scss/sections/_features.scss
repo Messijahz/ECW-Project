@@ -47,22 +47,22 @@
   gap: 1rem;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "headline"
-    "content";
+    'headline'
+    'content';
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "headline headline"
-      "content content";
+      'headline headline'
+      'content content';
   }
 
   @media (min-width: 1296px) {
     grid-template-columns: 3fr 2fr 2fr;
     grid-template-areas:
-      "images headline headline"
-      "images content content"
-      "images content content";
+      'images headline headline'
+      'images content content'
+      'images content content';
   }
 }
 
@@ -116,11 +116,12 @@
 .features-card-logos {
   display: flex;
   border-radius: 8px;
-  width: 75px;
+  width: 60px;
   height: 60px;
   background-color: var(--color-secondarybg);
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .cards-text {

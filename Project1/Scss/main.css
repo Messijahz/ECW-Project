@@ -166,6 +166,16 @@ body {
   gap: 1rem;
 }
 
+.navbar2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  margin-block: 1rem;
+  gap: 1rem;
+  font-size: 14px;
+}
+
 .features-link {
   color: var(--color-text700-white);
   font-size: 16px;
@@ -617,11 +627,12 @@ body {
 .features-card-logos {
   display: flex;
   border-radius: 8px;
-  width: 75px;
+  width: 60px;
   height: 60px;
   background-color: var(--color-secondarybg);
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .cards-text {
@@ -1453,6 +1464,163 @@ footer p {
   }
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #contact h2 {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  #contact h3 {
+    text-align: center;
+  }
+  #contact h4 {
+    font-size: 16px;
+    color: var(--color-headline);
+  }
+}
+@media (min-width: 1296px) {
+  #contact {
+    width: 1296px;
+    flex-direction: row;
+  }
+  #contact h1 {
+    font-size: 40px;
+    line-height: 140%;
+    text-align: left;
+    padding-block: 2rem;
+  }
+  #contact h2 {
+    font-size: 32px;
+    line-height: 140%;
+    text-align: left;
+  }
+  #contact h3 {
+    text-align: left;
+    font-size: 24px;
+  }
+  #contact h4 {
+    font-size: 16px;
+    text-align: left;
+  }
+  #contact p {
+    margin-block: 1rem;
+  }
+  #contact i {
+    margin: 1.5rem;
+    font-size: 16px;
+  }
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: var(--color-gray900);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.contact-info-container {
+  width: 420px;
+}
+
+.contact-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 400px;
+  padding-block: 1rem;
+}
+
+.contact-text {
+  padding-left: 1.5rem;
+}
+
+.consulation-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-inline: 3rem;
+  margin: 1rem;
+  background-color: var(--color-white);
+  width: 600px;
+  height: 700px;
+  text-align: left;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 38px;
+  top: 0;
+  box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+}
+.consulation-box h2 {
+  margin-block: 5rem 2rem;
+}
+.consulation-box label,
+.consulation-box input,
+.consulation-box select {
+  display: block;
+  font-weight: 600;
+}
+.consulation-box input,
+.consulation-box select {
+  width: 240%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-block: 0.5rem;
+  border: 1px solid var(--color-gray400);
+}
+.consulation-box label {
+  margin-top: 1.5rem;
+}
+.consulation-box select {
+  margin-bottom: 8rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.consulation-box button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  width: 240%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-block: 0.5rem;
+  border: 1px solid var(--color-gray400);
+  cursor: pointer;
+}
+
+#contact-info {
+  background-color: var(--color-white);
+  display: flex;
+}
+
+.address-container {
+  display: flex;
+  margin-block: 14rem;
+  text-align: left;
+  gap: 5rem;
+}
+
+#map-info {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+
 .toggle-switch {
   width: 46px;
   height: 24px;
@@ -1810,4 +1978,35 @@ a:hover {
 
 .background-gradient {
   background: var(--color-Gradient);
+}
+
+a.active {
+  color: var(--color-primary);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.background-gray100 {
+  background-color: var(--color-gray100);
+}
+
+.padding-bottom-6 {
+  padding-bottom: 6rem;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
 }/*# sourceMappingURL=main.css.map */
